@@ -4,4 +4,6 @@ from django.db import models
 class UrlLink(models.Model):
     website=models.URLField()
 
+    def __str__(self):
+        return self.website
     
