@@ -1,0 +1,46 @@
+{% load static %}
+<head>
+    <title>
+        Url Shortner
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/core.css' %}">
+</head>
+<body>
+    <!-- Navabr -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand " href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">   
+              <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#">About</a>      
+                  </li>  
+               <li class="nav-item">
+                   <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
+                </li>
+                <li class="nav-item"> 
+                   <a class="nav-link " data-value="blog" href="#">Blog</a>       
+                  </li>   
+               <li class="nav-item">  
+                  <a class="nav-link " data-value="team" href="#">Team</a>      
+                 </li>  
+               <li class="nav-item"> 
+                <a class="nav-link " data-value="contact" href="#">Contact</a>     
+              </li> 
+               </ul> 
+               </div>
+    </nav>
+    <header class="header">
+            
+        </header>
+    <div class="bottom">
+            {% block content %}
+            {% endblock %}
+    </div>
+    <script type="text/javascript" src='{% static 'js/core.js' %}'></script>
+</body>

@@ -72,7 +72,7 @@ def redirect_to_website(request,key):
         int_sum += true_ord(char) * int(math.pow(BASE, idx))
     url=get_object_or_404(UrlLink,pk=int_sum)
     return redirect(url.website)
-        
+      
 # Create your views here.
 '''
 redirect website me string to pk mean saturate
